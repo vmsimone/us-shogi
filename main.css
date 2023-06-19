@@ -1,15 +1,42 @@
-html {
-
-}
-
-body {
-
-}
-
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 20%;
+    background-color: white;
+}
 
+nav button {
+    position: block;
+    width: 100%;
+    height: 33%;
+    margin: 0 auto;
+    margin-top: 30%;
+    background-color: white;
+    border: white;
+}
+
+nav button img {
+    width: 100px;
+    height: 100px;
 }
 
 main {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
 
+section {
+    top: 10%;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 56px;
 }
