@@ -1,5 +1,5 @@
 body {
-    background-image: url("./images/board (zoom).jpg");
+    background-image: url("./images/board (narrow).jpg");
     background-size: cover;
     background-position: center;
 }
@@ -13,7 +13,7 @@ nav {
     width: 100%;
     height: 7%;
     border: none;
-    background: white;
+    background: maroon;
 }
 
 nav a {
@@ -31,10 +31,11 @@ nav a img {
 main {
     margin: 0 auto;
     margin-top: 20%;
+    padding: 20px;
     left: 10%;
     width: 80%;
-    text-align: center;
-    background-color: white;
+    text-align: justify;
+    background-color: wheat;
     border-radius: 10px;
     font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
@@ -45,16 +46,47 @@ section {
 
 h1 {
     font-size: 48px;
+    text-align: center;
 }
 
 h2 {
     font-size: 32px;
+    text-align: center;
 }
 
 p {
     font-size: 20px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: maroon;
+}
+
+.club-details > li {
+    list-style-type: "\2616";
+    margin-left: 35px;
+    padding-left: 10px;
+    text-align: left;
+}
+
 @media only screen and (min-width: 900px) {
+    body {
+        background-image: url("./images/board.jpg");
+    }
+    
+    main {
+        border-radius: 20px;
+        margin-top: 10%;
+        padding: 20px;
+    }
 
 }
