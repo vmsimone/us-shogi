@@ -48,7 +48,6 @@ main {
 }
 
 section {
-    top: 10%;
     background-color: wheat;
     border-radius: 10px;
     padding: 20px;
@@ -115,5 +114,9 @@ a {
 
     h1 {
         margin-top: 0;
+    }
+
+    section: {
+        margin-top: 15%;
     }
 }
