@@ -95,6 +95,14 @@ a {
     text-align: left;
 }
 
+#tournamentQR {
+    display: none;
+}
+
+.desktop-only {
+    display: none;
+}
+
 @media only screen and (min-width: 900px) {
     body {
         background-image: url("./images/board.jpg");
@@ -115,5 +123,17 @@ a {
 
     h1 {
         margin-top: 0;
+    }
+
+    #tournamentQR {
+        display: inherit;
+        float: right;
+        /* clear: left; */
+        margin: 10px;
+        max-width: 20%;
+    }
+
+    .desktop-only {
+        display: contents;
     }
 }
