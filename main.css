@@ -31,7 +31,7 @@ nav a {
     /* height: 80%;
     max-width: 30%; */
     text-align: center;
-    
+
 }
 
 a:hover,
@@ -78,8 +78,20 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
 p {
     font-size: 20px;
+}
+
+li > p {
+    font-size: 18px;
 }
 
 ul {
