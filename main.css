@@ -58,6 +58,7 @@ section {
     background-color: var(--light);
     border-radius: 10px;
     padding: 20px;
+    padding-top: 30px;
     margin-top: 10%;
     box-shadow: 4px 4px 8px black;
 }
@@ -83,7 +84,7 @@ h3 {
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 button {
@@ -157,6 +158,10 @@ a {
         margin-top: 50px;
         padding: 100px;
         width: 60%;
+        text-align: left;
+    }
+
+    #home {
         text-align: justify;
     }
 
