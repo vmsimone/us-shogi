@@ -1,15 +1,28 @@
 function loadPage() {
-    // readyScroll()
+    readyMap();
 }
 
-// function readyScroll() {
+function readyMap() {
+    $('.clubs').on('click', e => {
+        displayClubInfo(e.currentTarget.id);
+    })
+    
+    $('.jsaClubs').on('click', e => {
+        displayClubInfo(e.currentTarget.id);
+    })
 
-//     const navHeight = $('nav').height();
-//     console.log(navHeight);
+    $('#btn-all-clubs').on('click', e => {
+        displayClubInfo('club');
+    })
+}
 
-//     const offset = $(':target').offset();
-//     const scrollto = offset.top - navHeight; // minus fixed header height
-//     $('html, body').animate({scrollTop:scrollto}, 0);
-// }
+function displayClubInfo(state) {
+    console.log(state);
+    $('.club').css('display', 'none');
+    $(`.${state}`).css('display', 'block')
+    // $('html, body').animate({
+    //     scrollTop: $('.clubs').offset().top -10
+    // }, 500);
+}
 
 $(loadPage);
