@@ -8,12 +8,14 @@ function decrypt() {
 
     clubKeys.forEach(club => {
         const contactLi = clubs[club].getElementsByClassName('contact')[0];
-        const decryptedEmail = atob(contactLi.id);
-
-        const emailAnchor = contactLi.children[0];
-
-        emailAnchor.setAttribute("href", `mailto:${decryptedEmail}`);
-        emailAnchor.textContent=decryptedEmail;
+        if(contactLi) {
+            const decryptedEmail = atob(contactLi.id);
+    
+            const emailAnchor = contactLi.children[0];
+    
+            emailAnchor.setAttribute("href", `mailto:${decryptedEmail}`);
+            emailAnchor.textContent=decryptedEmail;
+        }
     })
 }
 
