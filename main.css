@@ -144,7 +144,9 @@ a {
 
 @media only screen and (min-width: 900px) {
     body {
-        background-image: url("./images/board.jpg");
+        /* background-image: url("./images/board.jpg"); */
+        background-image: none;
+        background-color: var(--dark);
     }
 
     nav {
@@ -153,10 +155,14 @@ a {
     }
 
     .img-carousel {
-        height: 400px;
         width: 100%;
-        background-color: var(--dark);
         margin-top: 50px;
+        text-align: center;
+    }
+
+    .img-carousel img {
+        max-width: 100%;
+        margin: 0;
     }
     
     main {
@@ -170,6 +176,30 @@ a {
         border-radius: 10px;
         text-align: left;
         /* box-shadow: 4px 4px 8px black; */
+    }
+
+    .link-boxes {
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+
+    .link-box-sm {
+        display: inline-flex;
+        flex-grow: 3;
+        margin: 20px;
+        height: 150px;
+        background: var(--medium);
+        box-shadow: 4px 4px 8px black;
+    }
+
+    .link-box-md {
+        display: inline-flex;
+        flex-grow: 2;
+        margin: 20px;
+        height: 300px;
+        background: var(--medium);
+        box-shadow: 4px 4px 8px black;
     }
 
     h2 {
