@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>US Shogi Federation</title>
+    <link rel="icon" type="image/jpg" href="images/logo_transp.png"/>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body role="document">
+    <nav role="navigation">
+      <a class="nav-link" id="home-btn" href="./index.html"><i class="fa fa-home"></i><span class="desktop-only"> Home</span></a>
+      <a class="nav-link" id="contact-btn" href="./clubs.html"><i class="fa fa-group"></i><span class="desktop-only"> Clubs</span></a>
+      <a class="nav-link" id="tournaments-btn" href="./tournaments.html"><i class="fa fa-trophy"></i><span class="desktop-only"> Tournaments</span></a>
+      <a class="nav-link" id="learn-btn" href="./learn.html"><i class="fa fa-book"></i><span class="desktop-only"> Learn</span></a>
+      <a class="nav-link" id="play-btn" href="./play.html"><i class="fa fa-gamepad"></i><span class="desktop-only"> Play</span></a>
+      <a class="nav-link" id="watch-btn" href="./watch.html"><i class="fa fa-video-camera"></i><span class="desktop-only"> Watch</span></a>
+      <!-- <a class="nav-link" id="language-btn">日本語</a> -->
+    </nav>
+    <main role="main" aria-live="assertive">
+      <!-- <img src="images/logo_transp.png"> -->
+      <section id="play">
+        <h2>Let's Play!</h2>
+        <p>If you're having trouble <a href="#clubs">finding a club in your area</a>, there are several websites and apps where you can play shogi with other players online. Descriptions of a few better-known sites are included below.</p>
+        <ul>
+          <li>
+            <h4><a href="https://system.81dojo.com/en">81Dojo</a></h4>
+            <p>81Dojo is considered to be the most authentic shogi experience you can get online. While the user interface is somewhat dated, the attention to detail is incomparable. Just like you might see your opponent reaching for a piece over-the-board, any piece they click on is highlighted. There are no movement guides and illegal moves are allowed, but result in an instant loss, just like a tournament. Finally, the game only ends when one side resigns, rather than an automatic checkmate win, and post-game analysis can be done with the opponent immediately afterward. There are also apps for both Android and iOS to play on a mobile device. As the interface can be somewhat daunting, Shogi Harbour has created <a href="https://www.youtube.com/watch?v=shM5ix49F6Y">a video guide</a> for first time users.</p>
+          </li>
+          <li>
+            <h4><a href="https://lishogi.org/">lishogi</a></h4>
+            <p>Created as a fork from lichess, lishogi is an open-source, free site designed to be easily accessible to anyone. It has a modern, responsive design, many customization options for boards and pieces, and a wide array of puzzles and user-submitted studies. While the player-base is rather small compared to ther sites, the option to send an invite link to anyone for a game without needing to register makes lishogi a great option for more casual, friendly games.</p>
+          </li>
+          <li>
+            <h4><a href="https://shogiwars.heroz.jp/?locale=en">ShogiWars</a></h4>
+            <p>A primarily Japanese site with a decent English translation, ShogiWars probably has the largest playerbase of any site. After signing up, you can click "Game Start" on either the app or browser version and find an opponent within seconds. However, time controls are short, and "speed shogi" is often very different from a typical game. In addition, the free-to-play version only allows up to three games per day; you'll need to pay for a membership if you want to keep going.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./animations.js"></script>
+    <script src="./decryptEmails.js"></script>
+  </body>
+</html>
