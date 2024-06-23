@@ -195,7 +195,8 @@ a {
     color: var(--red);
 }
 
-.club-details > li {
+.club-details > li,
+.tourney-details > li {
     list-style-type: "\2616";
     margin-left: 35px;
     padding-left: 10px;
