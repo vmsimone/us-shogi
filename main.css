@@ -213,10 +213,16 @@ a {
 @media only screen and (min-width: 900px) {
     nav {
         padding: 10px;
+        font-size: 32px;
     }
 
     nav .fa {
         display: inline-block;
+        margin-bottom: 0;
+    }
+
+    nav .nav-link {
+        height: 100%;
     }
 
     nav .link-text {
@@ -240,6 +246,7 @@ a {
         width: 80%;
         text-align: left;
         background-color: var(--light);
+        margin: 0 auto;
         margin-top: 10px;
     }
 
