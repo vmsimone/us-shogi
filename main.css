@@ -6,10 +6,13 @@
 }
 
 body {
-    background-image: url("./images/board (narrow).jpg");
+    background-image: none;
+    background-color: var(--dark);
+    /* background-image: url("./images/board.jpg"); */
+    /* background-image: url("./images/board (narrow).jpg");
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 nav {
@@ -31,7 +34,7 @@ nav a {
     /* height: 80%;
     max-width: 30%; */
     text-align: center;
-    /* text-underline-position: 5em; */
+    text-decoration: none;
 }
 
 a:hover,
@@ -44,23 +47,45 @@ nav a img {
     max-height: 100%;
 }
 
+nav .nav-link {
+    padding: 0;
+    height: 40px;
+}
+
+nav .fa {
+    display: block;
+    margin-bottom: -10px;
+}
+
+nav a i {
+    text-decoration: none;
+}
+
+nav .link-text {
+    font-size: 12px;
+    height: 12px;
+    text-decoration: underline;
+    top: 0;
+}
+
 main {
-    margin: 0 auto;
+    top: 10px;
+    padding: 25px 2%;
     left: 2.5%;
-    width: 95%;
+    width: 96%;
     text-align: left;
-    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: var(--light);
     font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-section {
-    /* background-color: var(--light);
+/* section {
+    background-color: var(--light);
     border-radius: 10px;
     padding: 20px;
     padding-top: 30px;
-    margin-top: 10%; */
-    /* box-shadow: 4px 4px 8px black; */
-}
+    margin-top: 10%;
+    box-shadow: 4px 4px 8px black;
+} */
 
 h1 {
     margin-top: 20%;
@@ -80,6 +105,49 @@ h2 {
 
 h3 {
     font-size: 28px;
+}
+
+.link-boxes {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    width: 100%;
+}
+
+.link-boxes a {
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+.link-boxes a:hover,
+.link-boxes a:focus {
+    border-color: var(--red);
+}
+
+.link-box-sm {
+    margin: 15px;
+    height: 200px;
+    padding: 10px;
+    background: var(--medium);
+    box-shadow: 4px 4px 8px black;
+}
+
+.link-box-md {
+    flex-basis: 100%;
+    height: 300px;
+    margin: 20px;
+    padding: 25px;
+    background: var(--medium);
+    box-shadow: 4px 4px 8px black;
+}
+
+.link-box-md img {
+    max-height: 50%;
+}
+
+
+.link-box-md i::before {
+    font-size: 108px;
 }
 
 h4 {
@@ -143,19 +211,17 @@ a {
 }
 
 @media only screen and (min-width: 900px) {
-    body {
-        /* background-image: url("./images/board.jpg"); */
-        background-image: none;
-        background-color: var(--dark);
+    nav {
+        padding: 10px;
     }
 
-    nav {
-        font-size: 32px;
-        padding: 10px;
+    nav .fa {
+        display: inline-block;
     }
 
     nav .link-text {
         margin-left: 10px;
+        font-size: 32px;
     }
 
     .img-carousel {
@@ -185,6 +251,7 @@ a {
 
     .link-boxes {
         display: flex;
+        flex-flow: row nowrap;
         text-align: center;
         width: 100%;
     }
