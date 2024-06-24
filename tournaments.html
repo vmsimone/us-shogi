@@ -39,15 +39,41 @@
         <h3>Upcoming</h3>
         <h4>2024 West Coast Tournament</h4>
         <p>
-          The 2024 US West Coast Tournament has been announced! Details below:
+          The 2024 US West Coast Tournament has been announced! Download <a href="pdf/2024WestCoastShogi.pdf" download>the official flyer</a> or view the details below:
           <ul class="tourney-details">
-            <li>Time (Adults): Saturday September 21st, 12pm - 5pm and Sunday September 22nd, 8am - 5pm</li>
-            <li>Time (Kids): Sunday September 22nd, 9am - 12pm</li>
-            <li>Place: <a href="https://maps.app.goo.gl/GWQJ4XpRKiN5hCrA9">Hesse Community Park</a> in Rancho Palos Verdes, CA</li>
-            <li>Pro Guests: Itō Sae, Ladies' Professional 4-dan and Murota Io, Ladies' Professional 2-dan</li>
+            <li><b>Pro Guests: </b><a href="https://en.wikipedia.org/wiki/Sae_It%C5%8D">Itō Sae</a>, Ladies' Professional 4-dan and <a href="https://en.wikipedia.org/wiki/Io_Murota">Murota Io</a>, Ladies' Professional 2-dan</li>
+            <li><b>Location: </b><a href="https://maps.app.goo.gl/GWQJ4XpRKiN5hCrA9">Fred Hesse Community Park</a>
+              <br>29301 Hawthorn Blvd.
+              <br>Rancho Palos Verdes, CA 90275
+            </li>
+            <li><b>Schedule:</b>
+              <ul>
+                <li><b>Saturday, September 21st: </b>
+                  <ul>
+                    <li><b>8am - 12pm: </b>Pro Teaching Games and Social</li>
+                    <li><b>12pm - 5pm: </b>Main Tournament, Round 1</li>
+                    <li><b>5pm and Later: </b>Dinner Party</li>
+                  </ul>
+                </li>
+                <li><b>Sunday, September 22nd:</b>
+                  <ul>
+                    <li><b>8am - 5pm: </b>Main Tournament, Round 2</li>
+                    <li><b>9am - 12pm: </b>Kids' Tournament</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>Entry Fees:</b>
+              <ul>
+                <li>Main Tournament: $100</li>
+                <li>Kids' Tournament: $20</li>
+                <li>Dinner Party: $100</li>
+              </ul>
+            </li>
           </ul>
           <br>
-          A dinner party will be held at Mark Ono's house on Saturday after the tournament. Registration fees are TBD.
+          The dinner party will be held at Mark Ono's house on Saturday after the tournament. For more information, or to register for the tournament, contact Mark Ono at <a id="contactEmail" href=""></a>.
         </p>
         <!-- <img alt="qr code" src="images/tournamentQR.PNG" id="tournamentQR" class="desktop-only" /> -->
         <h4>World Shogi League</h4>
@@ -62,5 +88,13 @@
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./animations.js"></script>
+    <script>
+      const decryptedEmail = atob("c2hvZ2lfbGFAZ29vZ2xlZ3JvdXBzLmNvbQ==");
+
+      const emailAnchor = document.getElementById('contactEmail');
+
+      emailAnchor.setAttribute("href", `mailto:${decryptedEmail}`);
+      emailAnchor.textContent=decryptedEmail;
+    </script>
   </body>
 </html>

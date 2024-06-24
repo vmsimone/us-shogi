@@ -196,7 +196,9 @@ a {
 }
 
 .club-details > li,
-.tourney-details > li {
+.tourney-details > li,
+.tourney-details > li > ul > li,
+.tourney-details > li > ul > li > ul > li {
     list-style-type: "\2616";
     margin-left: 35px;
     padding-left: 10px;
