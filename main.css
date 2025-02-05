@@ -205,6 +205,14 @@ a {
     text-align: left;
 }
 
+.tourney-details > li {
+    list-style-type: "\2617";
+    margin-left: 35px;
+    margin-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+
 #tournamentQR {
     display: none;
 }
@@ -312,6 +320,7 @@ a {
         float: right;
         /* clear: left; */
         margin: 10px;
+        margin-right: 50%;
         max-width: 20%;
     }
 
