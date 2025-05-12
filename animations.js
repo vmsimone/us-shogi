@@ -3,11 +3,11 @@ function loadPage() {
 }
 
 function readyMap() {
-    $('#outlines.clubs').on('click', e => {
+    $('#outlines .clubs').on('click', e => {
         displayClubInfo(e.currentTarget.id);
     })
     
-    $('#outlines.jsaClubs').on('click', e => {
+    $('#outlines .jsaClubs').on('click', e => {
         displayClubInfo(e.currentTarget.id);
     })
 
