@@ -16,9 +16,8 @@ body {
     background-position: center; */
 }
 
-nav {    
+nav {
     position: fixed;
-    z-index: 1;
     display: inline-flex;
     top: 0;
     left: 0;
@@ -29,11 +28,6 @@ nav {
     background: var(--cards);
     font-family: 'Libre Baskerville', serif;
     font-size: 24px;
-}
-
-nav > * {
-    opacity: 0;
-    animation: fadeIn 2s forwards 1s;
 }
 
 nav a {
@@ -76,16 +70,6 @@ nav .link-text {
     top: 0;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
 main {
     top: 10px;
     padding: 25px 2%;
@@ -94,11 +78,6 @@ main {
     text-align: left;
     background-color: var(--mainbg);
     font-family: 'Libre Baskerville', serif;
-}
-
-main > * {
-    opacity: 0;
-    animation: fadeIn 2s forwards 1s;
 }
 
 /* section {
