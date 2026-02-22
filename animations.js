@@ -1,5 +1,15 @@
 function loadPage() {
+    fadeIn();
     readyMap();
+}
+
+function fadeIn() {
+    $('nav').children().css('animation', 'fadeIn 1s forwards');
+    $('main').children().css('animation', 'fadeIn 1s forwards');
+}
+
+function fadeOut() {
+
 }
 
 function readyMap() {
