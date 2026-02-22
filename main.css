@@ -112,6 +112,11 @@ h3 {
     font-family: "Alegreya", serif;
 }
 
+img {
+    max-width: 90%;
+    border-radius: 5px;
+}
+
 .link-boxes {
     display: flex;
     flex-flow: row wrap;
