@@ -1,14 +1,14 @@
 :root {
-	--dark: #424B54;
-	--medium: #261814;
-	--light: #FFEEDB;
-	--red: #C75146;
+	--bg: #424B54;
+	--cards: #261814;
+	--mainbg: #FFEEDB;
+	--emphasis: #C75146;
     --highlight: #AD2E24;
 }
 
 body {
     background-image: none;
-    background-color: var(--dark);
+    background-color: var(--bg);
     /* background-image: url("./images/board.jpg"); */
     /* background-image: url("./images/board (narrow).jpg");
     background-attachment: fixed;
@@ -25,7 +25,7 @@ nav {
     min-height: 5%;
     padding: 5px;
     border: none;
-    background: var(--medium);
+    background: var(--cards);
     font-family: 'Libre Baskerville', serif;
     font-size: 24px;
 }
@@ -36,11 +36,12 @@ nav a {
     max-width: 30%; */
     text-align: center;
     text-decoration: none;
+    color: var(--mainbg)
 }
 
 a:hover,
 a:focus {
-    color: var(--highlight);
+    color: var(--emphasis);
 }
 
 nav a img {
@@ -65,7 +66,7 @@ nav a i {
 nav .link-text {
     font-size: 12px;
     height: 12px;
-    text-decoration: underline;
+    text-decoration: none;
     top: 0;
 }
 
@@ -75,12 +76,12 @@ main {
     left: 2.5%;
     width: 96%;
     text-align: left;
-    background-color: var(--light);
+    background-color: var(--mainbg);
     font-family: 'Libre Baskerville', serif;
 }
 
 /* section {
-    background-color: var(--light);
+    background-color: var(--mainbg);
     border-radius: 10px;
     padding: 20px;
     padding-top: 30px;
@@ -93,8 +94,8 @@ h1 {
     font-size: 56px;
     text-align: center;
     font-family: "Alegreya", serif;
-    background-color: var(--light);
-    color: var(--red);
+    background-color: var(--mainbg);
+    color: var(--emphasis);
     border-radius: 10px;
     padding: 10px;
     box-shadow: 4px 4px 8px black;
@@ -121,18 +122,20 @@ h3 {
 .link-boxes a {
     text-decoration: none;
     border: 2px solid transparent;
+    color: var(--mainbg);
 }
 
 .link-boxes a:hover,
 .link-boxes a:focus {
-    border-color: var(--red);
+    border-color: var(--emphasis);
+    color: var(--emphasis);
 }
 
 .link-box-sm {
     margin: 15px;
     height: 200px;
     padding: 10px;
-    background: var(--medium);
+    background: var(--cards);
     box-shadow: 4px 4px 8px black;
 }
 
@@ -141,7 +144,7 @@ h3 {
     height: 300px;
     margin: 20px;
     padding: 25px;
-    background: var(--medium);
+    background: var(--cards);
     box-shadow: 4px 4px 8px black;
 }
 
@@ -160,11 +163,11 @@ h4 {
 
 button {
     border-radius: 5px;
-    border: 2px solid var(--red);
-    color: var(--red);
-    background: var(--medium);
-    font-size: 16px;
-    padding: 5px;
+    border: 2px solid var(--highlight);
+    color: var(--mainbg);
+    background: var(--bg);
+    font-size: 24px;
+    padding: 10px;
     margin-left: 40%;
     margin-right: 40%;
     text-align: center;
@@ -172,10 +175,10 @@ button {
 
 button:hover,
 button:active {
-    background: var(--light);
+    /* background: var(--mainbg); */
     cursor: pointer;
-    color: var(--highlight);
-    border-color: var(--highlight);
+    color: var(--emphasis);
+    border-color: var(--emphasis);
 }
 
 p {
@@ -196,7 +199,7 @@ li {
 }
 
 a {
-    color: var(--red);
+    color: var(--highlight);
 }
 
 .club-details > li,
@@ -260,7 +263,7 @@ a {
         padding: 50px 100px 50px 100px;
         width: 80%;
         text-align: left;
-        background-color: var(--light);
+        background-color: var(--mainbg);
         margin: 0 auto;
         margin-top: 10px;
     }
@@ -285,7 +288,7 @@ a {
 
     .link-boxes a:hover,
     .link-boxes a:focus {
-        border-color: var(--red);
+        border-color: var(--emphasis);
     }
 
     .link-box-sm {
@@ -293,7 +296,7 @@ a {
         margin: 15px;
         height: 200px;
         padding: 10px;
-        background: var(--medium);
+        background: var(--cards);
         box-shadow: 4px 4px 8px black;
     }
 
@@ -302,7 +305,7 @@ a {
         margin: 20px;
         padding: 25px;
         height: 300px;
-        background: var(--medium);
+        background: var(--cards);
         box-shadow: 4px 4px 8px black;
     }
 
