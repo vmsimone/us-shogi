@@ -51,7 +51,23 @@
         <h4>World Shogi League</h4>
         <p>The 2026 WSL season is currently underway! See how our US teams are doing here: <a href="https://81dojo.com/wsl/">https://81dojo.com/wsl/</a></p>
 
-        <h3>Latest Tournament Results</h3>
+        <h3>US Shogi Tournament History</h3>
+
+        <div class="wrap">
+        <div class="bar">
+          <input id="q" type="search" placeholder="Search tournament, location or champion" aria-label="Search">
+          <span class="count" id="count"></span>
+        </div>
+        <div class="scroll">
+          <table>
+            <thead><tr id="head"></tr></thead>
+          </table>
+        </div>
+        <p class="note" id="note"></p>
+      </div>
+
+
+
         <p>
           The 2026 US West Coast Tournament was held in Los Angeles on September 12th and 13th. See the complete results at <a href="https://docs.google.com/spreadsheets/d/1gRFdQngbpphmuTnbW-3s2WnayYUgmKI0jZdsUsQ9ryM/edit?usp=sharing">this link</a>
         </p>
@@ -75,13 +91,7 @@
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./animations.js"></script>
-    <script>
-      const decryptedEmail = atob("aW5mb0B1cy1zaG9naS5vcmc=");
+    <script src="./tournamentHistory.js"></script>
 
-      const emailAnchor = document.getElementById('contactEmail');
-
-      emailAnchor.setAttribute("href", `mailto:${decryptedEmail}`);
-      emailAnchor.textContent=decryptedEmail;
-    </script>
   </body>
 </html>
