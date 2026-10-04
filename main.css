@@ -273,8 +273,7 @@ a {
 }
 
 .data-table .sort-arrow {
-    display: inline-block;
-    min-width: 1em; /* reserve space so headers don't shift when the arrow appears */
+    position: absolute; /* out of the text flow, so it doesn't shift centered/right-aligned labels */
     margin-left: 4px;
     font-size: 11px;
 }
@@ -293,7 +292,7 @@ a {
 }
 
 .data-table .num {
-    text-align: right;
+    text-align: center;
 }
 
 @media only screen and (min-width: 900px) {

@@ -171,7 +171,9 @@ async function loadTournaments() {
 
 async function loadPlayers() {
     try {
-        const players = await fetchRecords(playerSheetUrl)
+        // Only list players with at least 3 games
+        const minGames = 3
+        const players = (await fetchRecords(playerSheetUrl)).filter(player => Number(player.Games) >= minGames)
 
         // "Last Active" is just the year of the Last Event (e.g. 9/12/2026 -> 2026)
         players.forEach(player => {
