@@ -233,6 +233,69 @@ a {
     display: none;
 }
 
+/* Tournament and player tables */
+.table-wrapper {
+    max-height: 420px; /* roughly 6 rows plus the header */
+    overflow: auto;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 8px black;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    background: var(--mainbg);
+}
+
+.data-table th {
+    position: sticky;
+    top: 0;
+    padding: 10px 12px;
+    background: var(--cards);
+    color: var(--mainbg);
+    font-family: "Alegreya", serif;
+    font-size: 18px;
+    text-align: left;
+    white-space: nowrap;
+    border-bottom: 3px solid var(--emphasis);
+}
+
+.data-table th.sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.data-table th.sortable:hover,
+.data-table th.sortable:focus {
+    color: var(--emphasis);
+}
+
+.data-table .sort-arrow {
+    display: inline-block;
+    min-width: 1em; /* reserve space so headers don't shift when the arrow appears */
+    margin-left: 4px;
+    font-size: 11px;
+}
+
+.data-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(38, 24, 20, 0.2);
+}
+
+.data-table tbody tr:nth-child(even) {
+    background: rgba(199, 81, 70, 0.1);
+}
+
+.data-table tbody tr:hover {
+    background: rgba(199, 81, 70, 0.25);
+}
+
+.data-table .num {
+    text-align: right;
+}
+
 @media only screen and (min-width: 900px) {
     nav {
         padding: 10px;
